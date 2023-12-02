@@ -1,0 +1,68 @@
+# Ignoring these files or directories
+
+.git/
+.gnupg/
+# .java/
+# .steam/
+# .steampath
+# .steampid
+.var/
+# .wine/
+.cargo/
+.icons
+# go/
+.npm/
+.gtkrc-2.0
+.ssh/
+Documents/
+tmp/
+# Sync/
+.bash_history*
+.bash_logout
+.bash_profile
+.cache/
+Downloads/
+# .fehbg
+.gitconfig
+git-repos/
+.lesshst
+.local/
+# .mozilla/
+.pki
+# .viminfo
+# .wget-hsts
+.Xauthority
+wallpapers/
+.xinitrc
+VirtualBox VMs
+Music/
+
+# Inside of .config/
+.config/qBittorrent/
+# .config/unity3d/
+.config/casualOnTheSpot/
+.config/kewrc
+.config/yt-dpl/
+.config/cef_user_data/
+# .config/activitywatch/
+.config/VirtualBox/
+.config/libreoffice/
+.config/BraveSoftware/
+.config/dconf/
+.config/discord/
+# .config/dolphinrc
+.config/Electron/
+.config/htop/
+# .config/kde.org/
+.config/keepassxc/
+# .config/kiorc
+.config/nautilus/
+.config/nitrogen/
+.config/obsidian/
+# .config/procps/
+.config/pulse/
+.config/QtProject.conf
+.config/session/
+.config/syncthing/
+.config/wal/
+.config/yay/

@@ -1,0 +1,8 @@
+
+[Default Applications]
+image/*=nsxiv.desktop
+image/jpeg=nsxiv.desktop
+image/jpg=nsxiv.desktop
+image/png=nsxiv.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
