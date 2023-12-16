@@ -82,7 +82,7 @@
                     required_width = 64, -- min width of window required to show this column
                 },
                 type = {
-                    enabled = true,
+                    enabled = false,
                     required_width = 122, -- min width of window required to show this column
                 },
                 last_modified = {
@@ -90,11 +90,11 @@
                     required_width = 88, -- min width of window required to show this column
                 },
                 created = {
-                    enabled = true,
+                    enabled = false,
                     required_width = 110, -- min width of window required to show this column
                 },
                 symlink_target = {
-                    enabled = false,
+                    enabled = true,
                 },
             },
             -- A list of functions, each representing a global custom command
@@ -103,7 +103,7 @@
             commands = {},
             window = {
                 position = "left",
-                width = 40,
+                width = 32,
                 mapping_options = {
                     noremap = true,
                     nowait = true,

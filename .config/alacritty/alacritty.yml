@@ -19,7 +19,7 @@ font:
 
 window:
   padding:
-    x: 10
+    x: 3
     y: 3
 
-  opacity: 0.90
+  opacity: 0.85

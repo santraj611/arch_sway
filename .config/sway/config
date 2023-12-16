@@ -14,7 +14,10 @@ set $term alacritty
 set $menu exec rofi -show drun
 
 ### Output configuration
-output * bg ~/wallpapers/wallhaven-9mjoy1.png fill
+include "$HOME/.cache/wal/colors-sway"
+client.focused $color1 $background $foreground $color7 $color1
+
+output * bg $wallpaper fill
 # Example configuration:
 #
   output VGA-1 resolution 1280x1024@75Hz
@@ -51,23 +54,25 @@ output * bg ~/wallpapers/wallhaven-9mjoy1.png fill
 ### window related
 #
 # default_border pixel 2
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 2
+default_floating_border pixel 2
 
 # Adding gap
 gaps inner 4
 gaps outer 4
 
-
 ### Key bindings
 #
 # Basics:
 #
+    # Taking a screenshot
+    # bindsym $mod+p exec birdy
+
     # Start a terminal
     bindsym $mod+Return exec $term
 
     # Change wallpaper
-    bindsym $mod+Shift+r exec ~/.config/sway/scripts/walchanger.sh
+    bindsym $mod+Shift+r exec --no-startup-id wal -i ~/wallpapers/
 
     # Kill focused window
     bindsym $mod+q kill
@@ -86,7 +91,7 @@ gaps outer 4
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. This will end your Wayland session.' -B 'Sure, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -211,10 +216,10 @@ bar {
 include /etc/sway/config.d/*
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #631C40 #285577 #ffffff #621C40   #631C40
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-client.background       #ffffff
+# client.focused          #631C40 #285577 #ffffff #621C40   #631C40
+# client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #900000 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+#
+# client.background       #ffffff

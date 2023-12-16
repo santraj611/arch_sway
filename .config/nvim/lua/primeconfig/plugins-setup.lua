@@ -4,9 +4,16 @@ return require('packer').startup(function(use)
 
     use("szw/vim-maximizer") -- maximizes and restores current window
 
+    -- rofi config syntax highlighting for vim
+    use {
+        'Fymyte/rasi.vim',
+        ft = 'rasi',
+    }
+
     -- colortheme
     use {'nyoom-engineering/oxocarbon.nvim'}
     use({'rose-pine/neovim', as = 'rose-pine'})
+    use {'norcalli/nvim-colorizer.lua'} --not a colorscheme but to show colors
 
     -- essential plugins
     use('tpope/vim-surround')
@@ -102,7 +109,7 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
 
     -- making it transparent
-    use('xiyaowong/transparent.nvim')
+    -- use('xiyaowong/transparent.nvim')
 
     -- installing nvim-compe for code compilations
     use('hrsh7th/nvim-compe')

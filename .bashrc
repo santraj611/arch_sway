@@ -4,6 +4,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto'
 alias grep='grep --color=auto'
 alias nv='nvim'
 alias xrandrmode='xrandr --output VGA1 --mode'
@@ -14,6 +15,7 @@ PS1='\W >: '
 
 # Adding path
 export PATH="$PATH:/home/santraj/.local/bin"
+export PATH="$PATH:/home/santraj/.cargo/bin"
 
 # starship 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
